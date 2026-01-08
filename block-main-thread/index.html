@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Main Thread</title>
+  </head>
+  <body>
+    <h1>Block Main Thread</h1>
+    <p>
+      Clicking the button runs a blocking JavaScript loop that occupies the
+      browser’s main thread for about 10 seconds. While this loop is running,
+      the page becomes unresponsive: the UI freezes, scrolling and text
+      selection stop working, button click animations do not render, and even
+      browser developer tools may feel sluggish. Once the loop finishes, the
+      page becomes responsive again.
+    </p>
+    <button class="block">Block Main Thread For Ten Seconds.</button>
+    <script src="block.js"></script>
+  </body>
+</html>
